@@ -1,0 +1,110 @@
+body {
+    font-family: Poppins, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../pic/background.png);
+}
+
+.container {
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.contact-form, .contact-info {
+    padding: 20px;
+}
+
+.contact-form {
+    border-right: 1px solid #ddd;
+    padding-right:35px;
+    flex: 1;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #6c63ff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Poppins, sans-serif;
+}
+
+.contact-info {
+    flex: 1;
+    background-color: #f3f3f3;
+}
+
+.contact-info h2 {
+    margin-top: 0;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-info ul li img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.feedback-response {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.success-message {
+    background-color: #C6F7D0; /* light green */
+    padding: 10px;
+    border-radius: 5px;
+    color: #2E865F; /* dark green */
+}
+
+.error-message {
+    background-color: #F7CACA; /* light red */
+    padding: 10px;
+    border-radius: 5px;
+    color: #E74C3C; /* dark red */
+}

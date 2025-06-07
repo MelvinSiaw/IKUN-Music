@@ -1,0 +1,51 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.song-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.song-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.song-info img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.song-info h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.song-info p {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.audio-controls {
+    margin-top: 20px;
+}
+
+.song-description {
+    margin-top: 20px;
+    line-height: 1.6;
+}
+

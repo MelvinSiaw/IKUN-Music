@@ -1,0 +1,149 @@
+body {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+
+.navbar {
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #1f1f2e;
+    color: #ffffff;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.navbar-logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.navbar-logo span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-coins {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.navbar-coins img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.navbar-coins span {
+    font-size: 18px;
+}
+
+.navbar-links-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.navbar-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 20px;
+    transition: background-color 0.3s;
+}
+
+.navbar-user {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #33334d;
+    border-radius: 10px;
+}
+
+.navbar-user img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 12px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.profile-link{
+    color:#ffffff;
+}
+
+.navbar-user span {
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    background-color: #2d2d2d;
+    color: #fff;
+    width: 250px;
+    padding: 20px;
+    height: 100vh;
+}
+
+.main-content {
+    padding: 100px;
+    width: 100%;
+    background-image: url(../pic/background.png);
+}
+
+.main-content h1 {
+    color: #5b34eb;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form select, form button {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #5b34eb;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+form button:hover {
+    background-color: #472dbe;
+}
+
+.required {
+    color: red;
+    margin-left: 5px;
+}

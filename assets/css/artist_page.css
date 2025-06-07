@@ -1,0 +1,80 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image:url(..\pic\background.png);
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header section */
+.artist-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.artist-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.artist-details {
+    flex: 1;
+}
+
+.artist-name {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.artist-email, .artist-social {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.artist-social a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.artist-social a:hover {
+    text-decoration: underline;
+}
+
+/* Song section */
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.song-list {
+    list-style-type: none;
+}
+
+.song-item {
+    margin-bottom: 10px;
+}
+
+.song-link {
+    text-decoration: none;
+    color: #333;
+}
+
+.song-link:hover {
+    text-decoration: underline;
+}
