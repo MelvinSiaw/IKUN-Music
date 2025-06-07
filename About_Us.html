@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us Page Design</title>
+    <link rel="stylesheet" href="assets/css/aboutus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .navbar {
+    background: linear-gradient(90deg, #4b6cb7, #182848); /* Gradient background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    overflow: hidden;
+    border-radius: 0 0 10px 10px; /* Rounded bottom corners */
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0; /* Padding to increase the height */
+}
+
+.navbar-link {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px; /* Increase padding for larger clickable area */
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s; /* Smooth transition for hover effect */
+    font-weight: bold; /* Make text bold */
+    border-radius: 5px; /* Slightly rounded corners */
+    margin: 0 10px; /* Space between links */
+}
+
+.navbar-link:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent hover effect */
+    color: #fff; /* Keep the text white on hover */
+}
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="User_Home.php" class="navbar-link"><i class="fas fa-home"></i> Home</a>
+            <a href="user_playlist.php" class="navbar-link"><i class="fas fa-music"></i> My Playlist</a>
+            <a href="Help_and_Support.html" class="navbar-link"><i class="fas fa-question-circle"></i> Help & Support</a>
+            <a href="About_Us.html" class="navbar-link"><i class="fas fa-info-circle"></i> About Us</a>
+            <a href="UploadForm.php" class="navbar-link"><i class="fas fa-space-shuttle"></i> Ikun Space</a>
+            <a href="logout.php" class="navbar-link" id="logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        </div>
+    </nav>
+
+    <header>
+        <img src="assets/pic/Inspirational_Quote_Instagram_Post_1.png" alt="Ikun Logo" class="header-logo">
+        <h2>Ikun Music</h2>
+    </header>
+
+    <section id="home">
+        <div class="home-left">
+            <img src="assets/pic/Megurine.Luka.jpg" alt="">
+        </div>
+        <div class="home-right">
+            <h2 class="home-heading">Welcome to Ikun Music</h2>
+            <p class="home-para">Ikun is more than just a music streaming platform; it is a community of music lovers, artists, and creators. Founded on the principles of accessibility, diversity, and innovation, Ikun aims to connect people through the universal language of music.</p>
+        </div>
+    </section>
+
+    <section id="workFlow">
+        <h2 class="heading">Our Mission</h2>
+        <p class="para">Our mission is to bring the joy of music to everyone, everywhere.<br>We strive to provide a seamless and immersive listening experience, offering a diverse library of tracks from around the world.<br> Whether you're into pop, rock, jazz, classical, or discovering new genres, Ikun has something for you.</p>
+        <div class="num-container">
+            <div class="num-item"><span>27,882 <br>Customers</span></div>
+            <div class="num-item"><span>90% <br>Action Plans</span></div>
+            <div class="num-item"><span>70,592 <br>Downloads</span></div>
+        </div>
+    </section>
+    
+    <section id="goal">
+        <div class="goal-left">
+            <h2>Our Goal</h2>
+            <p>We envision a world where music is a part of everyday life for everyone. A world where artists can reach their audiences without barriers and where listeners can explore new sounds effortlessly. We aim to be at the forefront of digital music innovation, constantly improving and expanding our services to meet the needs of our users.</p>
+            <ul>
+                <li>Offline Listening: Download your favorite tracks and listen to them anytime, anywhere.</li>
+                <li>Artist Support: We provide a platform for emerging artists to showcase their talent and reach a global audience.</li>
+                <li>High-Quality Audio: Experience music in the best possible quality with our high-definition audio streaming.</li>
+            </ul>
+        </div>
+        <div class="goal-right">
+            <img src="assets/pic/xukun.jpg" alt="">
+        </div>
+    </section>
+    
+    <section id="our-Team">
+        <h2>Our Member</h2>
+        <div class="teamContainer">
+            <div class="team-item">
+                <img src="assets\pic\Melvin_Photo.png" alt="">
+                <h5 class="member-name">Melvin Siaw</h5>
+                <span class="role">CEO expert</span>
+            </div>
+            <div class="team-item">
+                <img src="assets/pic/chong.jpg" alt="">
+                <h5 class="member-name">Chong Jien Sheng</h5>
+                <span class="role">CEO expert</span>
+            </div>
+            <div class="team-item">
+                <img src="assets/pic/jiajun.jpg" alt="">
+                <h5 class="member-name">Chan Jia Jun</h5>
+                <span class="role">CEO expert</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 - All rights reserved - Melvin Cooporation</p>
+    </footer>
+
+
+</body>
+<script>
+    const hamBurgerBtn = document.getElementById('hamBurger');
+    hamBurgerBtn.addEventListener('click', function () {
+        const responsiveRight = document.querySelector('.responsive')
+        hamBurgerBtn.classList.toggle('active')
+        if (hamBurgerBtn.classList.contains('active')) {
+            responsiveRight.classList.add('active')
+        }
+        else {
+            responsiveRight.classList.remove('active')
+        }
+    })
+</script>
+</html>
